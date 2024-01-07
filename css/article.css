@@ -89,6 +89,276 @@
     border-radius: 5px;
 }
 
+.firstHeader {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    font-weight: 120px;
+    width: 80%;
+}
+
+hr {
+    height:1px;
+    width:80%;
+    margin-top: 5%;
+    margin-left:10%;
+    background-color:black;
+}
+
+
+
+/*--ARTICLES-----------------------------------*/
+.article-container {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.article-heading {
+    margin-top: 7%;
+    font-size: 30px;
+}
+
+
+
+/*--SOCMED NAV--------------------------------*/
+.article-socmed {
+    margin-left: 65%;
+    margin-top: 1%;
+}
+
+.article-socmed ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px;
+
+}
+
+.article-socmed .facebook a {
+    text-decoration: none;
+    border: solid 1px;
+    padding: 10px 15px;
+    color: #000000;
+}
+
+.article-socmed .twitter a {
+    text-decoration: none;
+    border: solid 1px ;
+    padding: 10px 15px;
+    color: #000000;
+}
+
+.article-socmed .insta a {
+    text-decoration: none;
+    border: solid 1px;
+    padding: 10px 15px;
+    color: #000000;
+}
+
+.article-socmed .copy a {
+    text-decoration: none;
+    border: solid 1px;
+    padding: 10px 15px;
+    color: #000000;
+}
+
+/*--SOCMED NAV HOVER EFFECT----*/
+.article-socmed a:hover {
+    background-color: rgb(165, 208, 230);
+    transition: 0.5s;
+}
+
+.article-socmed a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+/*--USER DETAILS------------------------------*/
+.user-profile {
+    display: flex;
+    padding-bottom: 1%;
+    border-bottom: solid 1px lightgrey;
+}
+
+.user-profile img {
+    display: block;
+    border: solid 2px black;
+    border-radius: 50px;
+    width: 4%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.user-name {
+    margin-top: 0.7%;
+    margin-left: 1.5%;
+}
+.user-name p {
+    font-size: 13px;
+    color: gray;
+}
+
+
+
+/*--ARTICLE IMG & PARAGRAPHS------------------*/
+.article-img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.article-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*--ARTICLE TEXT-------------------------------*/
+.article-text {
+    font-size: 22px;
+}
+
+
+/*--ARTICLE LINK-------------------------------*/
+.article-link {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.article-link p {
+    font-size: 20px;
+}
+
+.article-link a {
+    margin-left: 3%;
+    font-size: 20px;
+}
+
+
+
+/*--BOTTOM SEARCH BOX--------------------------*/
+.bottom-search-box {
+    position: relative;
+    margin: 20% 0 10% 30%;
+}
+
+.bottom-search-box input {
+    padding-left: 2%;
+    font-size: 20px;
+    width: 40%;
+    height: 9vh;
+}
+
+.button {
+    margin-left: -0.5%;
+    font-size: 20px;
+    width: 15%;
+    height: 9.5vh;
+    background-color: darkgrey;
+}
+
+
+
+/*--FOOTER-------------------------------------*/
+.row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-container {
+    position: relative;
+    width: calc(100%/12 * 12);
+    background-color: rgb(165, 208, 230);
+}
+.footer-container h5 {
+    font-size: 25px;
+}
+
+.pages {
+    position: relative;
+    width: calc(100%/12 * 3);
+    box-sizing: border-box;
+    padding: 5%;
+    height: 60vh;
+}
+.pages p {
+    padding-top: 10%;
+    font-size: 20px;
+}
+
+.latest-article {
+    position: relative;
+    width: calc(100%/12 * 4);
+    box-sizing: border-box;
+    padding: 5%;
+    height: 60vh;
+}
+
+.socmed {
+    position: relative;
+    width: calc(100%/12 * 5);
+    box-sizing: border-box;
+    padding: 5%;
+    height: 60vh;
+}
+
+.socmed-icon{
+    display: flex;
+}
+
+.socmed-icon a {
+    text-decoration: none;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 50%;
+
+}
+
+.socmed-icon a i {
+    font-size: 2em;
+    color: black;
+}
+
+/*--HOVER EFFECT ON ICONS---------*/
+.socmed-icon a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socmed-icon a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+/*--COPYRIGHT-----------------------------*/
+.copyright {
+    position: relative;
+    width: calc(100%/12 * 12);
+    box-sizing: border-box;
+    height: 5vh;
+    margin-left: 125%;
+    font-size: 20px;
+    color: #000000;
+}
+
+.copyright p {
+    text-decoration: none;
+}
 
 /* .navbar ul li a {
     text-decoration: none;

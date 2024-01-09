@@ -94,7 +94,7 @@
 .content-1 {
     width: 100%;
     min-height: 72.4%;
-    background-image: url(/Images/guidebg1.png);
+    background-image: url(../Images/guidebg1.png);
     background-size: cover;
     background-position: center;
 }
@@ -164,3 +164,53 @@
 }
 
 /* Footer Selector */
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #AAD1E5;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.pages, .latest-article, .socmed {
+    margin: 2rem;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+}
+
+.pages h3 {
+    margin-bottom: 0.5rem;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+/* .socmed {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+} */
+
+
+.copyright {
+    display: grid;
+    place-items: center;
+}
+
+.copyright p {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border-bottom: solid;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-list ul li a:hover {
+    text-decoration: underline;
+}
+
+/* logo selector */
+.logo img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* search-box selector */
+.search-box {
+    position: relative;
+    margin-left: 1.5rem;
+}
+
+.search-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-box input {
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+/* navigation list selector */
+
+.nav-list ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+
+/* log and sign in selector */
+
+.log-sign-in {
+    margin-left: 2rem;
+}
+
+.log-sign-in ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.log-sign-in .login a {
+    border: solid;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.log-sign-in .signin a {
+    color: #FFFFFF;
+    background-color: #000000;
+    border: solid;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* content */
+.content-1 {
+    width: 100%;
+    min-height: 72.4%;
+    background-image: url(/Images/guidebg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.content-2, .content-4 {
+    display: grid;
+    width: 70%;
+    height: 30vh;
+    margin-left: 12rem;
+    place-items: center;
+    text-align: center;
+    /* border: solid; */
+}
+
+.content-2 h2, .content-4 h2 {
+    font-size: 2.5em;
+}
+
+.content-3 {
+    width: 90%;
+    min-height: auto;
+    margin: 3rem 5rem;
+    /* margin-left: 5rem;
+    margin-top: 3rem; */
+
+}
+
+.content-3 h3 {
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+}
+
+.left-right-side {
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: solid;
+    margin-bottom: 5rem;
+}
+
+.left-side iframe{
+    margin-bottom: 2rem;
+}
+
+.left-side a {
+    text-decoration: none;
+    border: solid;
+    background-color:#000000;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+
+}
+
+.left-side a i {
+    margin-left: 0.5rem;
+}
+
+.right-side {
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.left-right-side:last-child {
+    border: none;
+}
+
+/* Footer Selector */

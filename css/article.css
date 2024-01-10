@@ -7,27 +7,34 @@
 
 .container {
     font-family: 'Inter', sans-serif;
-    width: 100%;
-    height: 100vh;
+    width: calc(100% / 12 * 12);
 }
 
 .navbar {
-    width: 100%;
+    width: calc(100% / 12 * 12);
     margin: auto;
     display: flex;
     align-items: center;
     height: 100px;
     border-bottom: solid;
+    overflow: hidden;
 }
 
 .navbar ul li a {
+    height: 100%;
     text-decoration: none;
     color: #000000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+
 }
 
 .nav-list ul li a:hover {
-    text-decoration: underline;
+    background-color: rgb(165, 208, 230);
 }
+
 
 /* logo selector */
 .logo img {
@@ -38,69 +45,118 @@
 /* search-box selector */
 .search-box {
     position: relative;
-    margin-left: 0.2rem;
+    margin-left: 1%;
 }
 
 .search-box i {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 5%;
     transform: translateY(-50%);
     cursor: pointer;
 }
 
 .search-box input {
-    padding: 10px 30px;
+    padding: 6% 30%;
     border-radius: 50px;
 }
 
 /* navigation list selector */
-
+.nav-list {
+    width: calc(100% / 12 * 6);
+    margin-left: 10%;
+}
 .nav-list ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 1.8rem;
+    margin-left: 2%
 }
 
 
 /* log and sign in selector */
-
 .log-sign-in {
-    margin-left: 3rem;
+    width: calc(100% / 12 * 3);
+    border: solid;
 }
 
 .log-sign-in ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 5px;
 }
 
 .log-sign-in .login a {
+    width: 80%;
     border: solid;
-    padding: 10px 15px;
+    padding: 15%;
     border-radius: 5px;
 }
 
 .log-sign-in .signin a {
+    width: 90%;
     color: #FFFFFF;
     background-color: #000000;
-    border: solid;
-    padding: 10px 15px;
+    border: solid rgb(255, 255, 255);
+    padding: 15%;
+    margin-left: 30%;
     border-radius: 5px;
 }
 
-.firstHeader {
+.log-sign-in .menu-icon a {
+    margin-left: 6em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*--SIDEBAR--------------------------------*/
+.menu-icon {
+    display: none;
+}
+.menu-icon a {
+    margin-left: 10em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #000000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+    padding: 5%;
+    font-size: 20px ;
+}
+
+
+.img-and-heading p {
     text-align: center;
     font-size: 60px;
     margin-top: 5%;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
     margin-left: 10%;
     font-weight: 120px;
-    width: 80%;
+    width: calc(100% / 12 * 8.6);
 }
 
+
+
 hr {
-    height:1px;
+    height: 1px;
     width:80%;
     margin-top: 5%;
     margin-left:10%;
@@ -134,35 +190,35 @@ hr {
 .article-socmed ul li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 1%;
 
 }
 
 .article-socmed .facebook a {
     text-decoration: none;
     border: solid 1px;
-    padding: 10px 15px;
+    padding: 10px;
     color: #000000;
 }
 
 .article-socmed .twitter a {
     text-decoration: none;
     border: solid 1px ;
-    padding: 10px 15px;
+    padding: 10px;
     color: #000000;
 }
 
 .article-socmed .insta a {
     text-decoration: none;
     border: solid 1px;
-    padding: 10px 15px;
+    padding: 10px;
     color: #000000;
 }
 
 .article-socmed .copy a {
     text-decoration: none;
     border: solid 1px;
-    padding: 10px 15px;
+    padding: 10px;
     color: #000000;
 }
 
@@ -185,7 +241,6 @@ hr {
     padding-bottom: 1%;
     border-bottom: solid 1px lightgrey;
 }
-
 .user-profile img {
     display: block;
     border: solid 2px black;
@@ -207,7 +262,7 @@ hr {
 
 
 
-/*--ARTICLE IMG & PARAGRAPHS------------------*/
+/*--ARTICLE IMG------------------------------*/
 .article-img {
     width: 100%;
     height: 100%;
@@ -237,7 +292,6 @@ hr {
     margin-top: 5%;
     margin-left: 5%;
 }
-
 .article-link p {
     font-size: 20px;
 }
@@ -283,8 +337,16 @@ hr {
     width: calc(100%/12 * 12);
     background-color: rgb(165, 208, 230);
 }
-.footer-container h5 {
-    font-size: 25px;
+.PLS {
+    position: relative;
+    width: calc(100%/12 * 12);
+    box-sizing: border-box;
+    height: 60vh;
+}
+
+.label {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .pages {
@@ -292,11 +354,12 @@ hr {
     width: calc(100%/12 * 3);
     box-sizing: border-box;
     padding: 5%;
-    height: 60vh;
 }
-.pages p {
-    padding-top: 10%;
-    font-size: 20px;
+
+.pages ul li {
+    display: grid;
+    font-size: 25px;
+    margin-top: 15px;
 }
 
 .latest-article {
@@ -304,7 +367,6 @@ hr {
     width: calc(100%/12 * 4);
     box-sizing: border-box;
     padding: 5%;
-    height: 60vh;
 }
 
 .socmed {
@@ -312,7 +374,6 @@ hr {
     width: calc(100%/12 * 5);
     box-sizing: border-box;
     padding: 5%;
-    height: 60vh;
 }
 
 .socmed-icon{
@@ -322,7 +383,7 @@ hr {
 .socmed-icon a {
     text-decoration: none;
     padding: 2%;
-    margin: 1%;
+    margin: 2%;
     border-radius: 50%;
 
 }
@@ -331,6 +392,7 @@ hr {
     font-size: 2em;
     color: black;
 }
+
 
 /*--HOVER EFFECT ON ICONS---------*/
 .socmed-icon a:hover {
@@ -343,22 +405,49 @@ hr {
     transition: 0.5s;
 }
 
+.footer-line {
+    position: relative;
+    width: calc(100%/12 * 41);
+    margin-bottom: 15%;
+    margin-left: 8%;
+    border-bottom: solid 2px gray;
+}
+
 
 
 /*--COPYRIGHT-----------------------------*/
+.copy-container {
+    position: relative;
+    width: calc(100%/12 * 27);
+}
+
 .copyright {
     position: relative;
     width: calc(100%/12 * 12);
     box-sizing: border-box;
     height: 5vh;
-    margin-left: 125%;
     font-size: 20px;
     color: #000000;
 }
 
 .copyright p {
-    text-decoration: none;
+    float: right;
 }
+
+
+
+
+@media (max-width: 975px){
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
 
 /* .navbar ul li a {
     text-decoration: none;

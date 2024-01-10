@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/article.css">
+    <link rel="stylesheet" href="../css/Article.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>CSGuide|Article</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -26,31 +28,44 @@
             </div>
 
             <div class="nav-list">
-                <ul>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="homepage.html">HOME</a></li>
+                    <li><a href="article.html">ARTICLE</a></li>
+                    <li><a href="#">GUIDE</a></li>
+                    <li><a href="#">TOOLS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <ul class="hideOnMobile">
                     <li><a href="homepage.html">HOME</a></li>
                     <li><a href="article.html"><u>ARTICLE</u></a></li>
                     <li><a href="#">GUIDE</a></li>
                     <li><a href="#">TOOLS</a></li>
                     <li><a href="#">ABOUT US</a></li>
                     <li><a href="#">CONTACT US</a></li>
+                    
                 </ul>
             </div>
 
             <div class="log-sign-in">
                 <ul>
                     <li class="login"><a href="#">Login</a></li>
-                    <li class="signin"><a href="#">Sign in</a></li>
+                    <li class="signin"><a href="#">Signin</a></li>
                 </ul>
             </div>
+
+            <div class="menu-icon" onclick=showSidebar()>
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+
         </div>
 
-        <div class="artPic1">
+        <div class="img-and-heading">
             <img src="../Images/artPic1.png" alt="logo" height="650vh" width="100%">
-        </div>
-        <div class="firstHeader">
+            
             <p>Explore Articles for Students Sucess at College Survival Guide</p>
         </div>
-
 
         <!--ARTICLES-------------------------------------------->
         <section id="articles">
@@ -171,39 +186,67 @@
                 <div class="footer-container">
                     <div class="row">
                         
-                        <div class="pages">
-                            <h5>Pages</h5>
-                            <p>Home</p>
-                            <p>Article</p>
-                            <p>Tools</p>
-                            <p>Guide</p>
-                            <p>About Us</p>
-                            <p>Contact Us</p>
-                        </div>
-        
-                        <div class="latest-article">
-                            <h5>Latest Articles</h5>
-                        </div>
-        
-                        <div class="socmed">
-                            <h5>Social Medias</h5>
-                            <div class="socmed-icon">
-                                <a href=""><i class="fa-brands fa-facebook"></i>
-                                <a href=""><i class="fa-brands fa-twitter"></i>
-                                <a href=""><i class="fa-brands fa-square-instagram"></i>
+                        <div class="PLS">
+                            <div class="row">
+
+                                <div class="pages">
+                                    <label class="label">Pages</label>
+                                    <ul>
+                                        <li>Home</li>
+                                        <li>Article</li>
+                                        <li>Tools</li>
+                                        <li>Guide</li>
+                                        <li>About Us</li>
+                                        <li>Contact Us</li>
+                                    </ul>
+                                </div>
+                
+                                <div class="latest-article">
+                                    <label class="label">Latest Articles</label>
+                                </div>
+                
+                                <div class="socmed">
+                                    <label class="label">Social Medias</label>
+                                    <div class="socmed-icon">
+                                        <a href=""><i class="fa-brands fa-facebook"></i>
+                                        <a href=""><i class="fa-brands fa-twitter"></i>
+                                        <a href=""><i class="fa-brands fa-square-instagram"></i>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="copyright">
-                            <p>Copyright &copy Team Awa BSIT S.Y. 2023-2024</p>
+                        
+                        <div class="footer-line"></div>
+
+                        <div class="copy-container">
+                            <div class="row">
+                                <div class="copyright">
+                                    <p>Copyright &copy Team Awa BSIT S.Y. 2023-2024</p>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
+                
             </div>
         </footer>
         
-
     </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
 </body>
 
 </html>

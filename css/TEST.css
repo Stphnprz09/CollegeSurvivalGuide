@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    font-family: 'Inter', sans-serif;
+    background-color: yellow;
+}
+
+.header-section {
+    position: relative;
+    width: calc(100%/12 *12);
+    background-color: rgb(111, 111, 101);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.logo {
+    position: relative;
+    width: calc(100%/12 * 1);
+    height: 10vh;
+    margin: 0.5%;
+    background-color: rgba(203, 0, 0, 0.8);
+    text-align: center;
+}
+
+.search-box {
+    position: relative;
+    width: calc(100%/12 * 2);
+    height: 10vh;
+    margin: 0.5% 0.5% 0.5% 0;
+    background-color: rgba(203, 0, 0, 0.8);
+    text-align: center;
+}
+
+.nav-list {
+    position: relative;
+    width: calc(100%/12 * 6.5);
+    height: 10vh;
+    margin: 0.5% 0.5% 0.5% 0;
+    background-color: rgba(203, 0, 0, 0.8);
+    text-align: center;
+}
+
+.log-sign-in {
+    position: relative;
+    width: calc(100%/12 * 1.5);
+    height: 10vh;
+    margin: 0.5% 0.5% 0.5% 0;
+    background-color: rgba(203, 0, 0, 0.8);
+    text-align: center;
+}
+
+.menu-icon {
+    position: relative;
+    width: calc(100%/12 * 0.5);
+    height: 10vh;
+    margin: 0.5% 0.5% 0.5% 0;
+    background-color: rgba(203, 0, 0, 0.8);
+    text-align: center;
+}
+
+
+
+.img-heading-section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: calc(100% / 12 * 12);
+}
+.img-heading-section p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 7%;
+    margin-bottom: 10%;
+    background-color: aquamarine;
+}
+
+
+
+
+.article-section {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    background-color: rgb(95, 95, 64);
+}
+
+.article-heading {
+    width: calc(100% / 12 * 5);
+    padding-left: 10%;
+    font-size: 30px;
+    background-color: blue;
+}
+
+.article-socmed {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    background-color: blueviolet;
+}
+.facebook {
+    position: relative;
+    width: calc(100%/12 * 0.7);
+    height: 6vh;
+    margin: 0.5% 0.5% 0 70%;
+    text-align: center;
+    background-color: rgba(200, 132, 132, 0.8);
+}
+.twitter {
+    position: relative;
+    width: calc(100%/12 * 0.7);
+    height: 6vh;
+    margin: 0.5%;
+    text-align: center;
+    background-color: rgba(200, 132, 132, 0.8);
+}
+.insta {
+    position: relative;
+    width: calc(100%/12 * 0.7);
+    height: 6vh;
+    margin: 0.5%;
+    text-align: center;
+    background-color: rgba(200, 132, 132, 0.8);
+}
+.copy {
+    position: relative;
+    width: calc(100%/12 * 0.7);
+    height: 6vh;
+    margin: 0.5%;
+    text-align: center;
+    background-color: rgba(200, 132, 132, 0.8);
+}
+
+
+
+.user-details {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    background-color: brown;
+}
+
+.user-profile {
+    border: solid 2px black;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.user-name {
+    margin: 0.7% 0 0 1%;
+}
+.user-name p {
+    font-size: 14px;
+}
+
+.article-img img {
+    display: block;
+    margin: 3% auto 0 auto;
+    height: 90vh;
+    width: calc(100% / 12 * 8);
+}
+
+.article-text {
+    width: calc(100%/ 12 * 10);
+    font-size: 22px;
+    margin: 1% auto 0 auto;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+.article-link {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    background-color: rgb(132, 2, 2);
+}
+.article-link p {
+    font-size: 22px;
+    margin: 4% 0 0 15%;
+}
+.article-link a {
+    font-size: 20px;
+    margin: 4% 0 0 1%;
+}
+
+
+.bottom-search-box {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    background-color: rgb(58, 165, 42);
+}
+.bottom-search-box input {
+    width: calc(100%/ 12 * 4);
+    height: 9vh;
+    margin: 20% 0 10% 30%;
+    padding-left: 2%;
+    font-size: 20px;
+}
+.bottom-search-box button {
+    margin: 20% 0 10% 0;
+    padding: 0 1.5% 0 1.5%;
+    height: 9.4vh;
+}
+
+
+
+.footer-section {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    background-color: rgb(234, 35, 151);
+}
+
+label {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pages {
+    position: relative;
+    width: calc(100% / 12 * 2);
+    margin: 5%;
+    background-color: coral;
+}
+.pages p {
+    font-size: 25px;
+    margin-top: 10%;
+}
+
+.latest-article {
+    width: calc(100%/ 12 * 4);
+    margin: 5%;
+    background-color: coral;
+}
+
+.socmed {
+    width: calc(100%/ 12 * 2);
+    margin: 5%;
+    background-color: coral;
+}

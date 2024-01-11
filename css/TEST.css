@@ -223,19 +223,6 @@
     body {
         font-size: 10px;
     }
-
-    .left {
-        position: relative;
-        width: calc(100% / 12 * 12);
-        box-sizing: border-box;
-    }
-    
-    .right {
-        position: relative;
-        width: calc(100% / 12 * 12);
-        box-sizing: border-box;
-        margin-left: 0%;
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

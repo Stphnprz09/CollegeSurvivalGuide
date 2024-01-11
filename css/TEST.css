@@ -6,20 +6,23 @@
 .container {
     position: relative;
     width: calc(100% / 12 * 12);
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     background-color: yellow;
-}
-
-.header-section {
-    position: relative;
-    width: calc(100%/12 *12);
-    background-color: rgb(111, 111, 101);
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+}
+
+
+/*------------HEADER SECTION----------------*/
+.header-section {
+    position: relative;
+    width: calc(100%/12 *12);
+    background-color: rgb(111, 111, 101);
 }
 
 .logo {
@@ -68,176 +71,168 @@
 }
 
 
-
-.img-heading-section img {
+/*---------------IMAGE AND HEADING SECTION------------------*/
+.img-heading-section img{
+    position: relative;
     display: block;
+    width: calc(100% / 12 * 12);
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
-    width: calc(100% / 12 * 12);
 }
-.img-heading-section p {
+
+.heading-text {
+    position: relative;
     text-align: center;
-    font-size: 60px;
-    margin-top: 7%;
-    margin-bottom: 10%;
+    font-size: 5ex;
+    margin: 7% 10% 10% 10%;
     background-color: aquamarine;
 }
 
 
-
-
+/*-------------ARTICLE CONTENTS SECTION-----------------*/
 .article-section {
     position: relative;
     width: calc(100% / 12 * 12);
-    background-color: rgb(95, 95, 64);
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgb(52, 189, 230);
 }
 
 .article-heading {
-    width: calc(100% / 12 * 5);
-    padding-left: 10%;
-    font-size: 30px;
-    background-color: blue;
+    position: relative;
+    width: calc(100%/ 12 * 5);
+    font-size: 3ex;
+    background-color: chartreuse;
 }
 
-.article-socmed {
+/*------------SOCMED NAVIGATION-------------*/
+.socmed-nav{
     position: relative;
-    width: calc(100% / 12 * 12);
-    background-color: blueviolet;
+    width: calc(100%/12 * 12);
+    background-color: darkred;
 }
+
+.socmed-nav a {
+    text-decoration: none;
+}
+
 .facebook {
     position: relative;
-    width: calc(100%/12 * 0.7);
+    width: calc(100%/12 * 1);
+    box-sizing: border-box;
+    margin-left: 60%;
     height: 6vh;
-    margin: 0.5% 0.5% 0 70%;
+    background-color: rgb(208, 26, 160);
     text-align: center;
-    background-color: rgba(200, 132, 132, 0.8);
 }
+
 .twitter {
     position: relative;
-    width: calc(100%/12 * 0.7);
+    width: calc(100%/12 * 1);
+    box-sizing: border-box;
+    margin-left: 1%;
     height: 6vh;
-    margin: 0.5%;
+    background-color:  rgb(208, 26, 160);
     text-align: center;
-    background-color: rgba(200, 132, 132, 0.8);
 }
+
 .insta {
     position: relative;
-    width: calc(100%/12 * 0.7);
+    width: calc(100%/12 * 1);
+    box-sizing: border-box;
+    margin-left: 1%;
     height: 6vh;
-    margin: 0.5%;
+    background-color:  rgb(208, 26, 160);
     text-align: center;
-    background-color: rgba(200, 132, 132, 0.8);
 }
+
 .copy {
     position: relative;
-    width: calc(100%/12 * 0.7);
+    width: calc(100%/12 * 1);
+    box-sizing: border-box;
+    margin-left: 1%;
     height: 6vh;
-    margin: 0.5%;
+    background-color:  rgb(208, 26, 160);
     text-align: center;
-    background-color: rgba(200, 132, 132, 0.8);
 }
 
 
 
-.user-details {
+/*----------UPLOADER DETAILS-------------*/
+.uploader-details {
     position: relative;
-    width: calc(100% / 12 * 12);
-    background-color: brown;
+    width: calc(100%/12 * 12);
+    background-color: crimson;
 }
 
-.user-profile {
+.user-profile img {
+    position: relative;
     border: solid 2px black;
     border-radius: 50%;
-    margin-left: 10%;
-}
-.user-name {
-    margin: 0.7% 0 0 1%;
-}
-.user-name p {
-    font-size: 14px;
 }
 
-.article-img img {
-    display: block;
-    margin: 3% auto 0 auto;
-    height: 90vh;
-    width: calc(100% / 12 * 8);
-}
-
-.article-text {
-    width: calc(100%/ 12 * 10);
-    font-size: 22px;
-    margin: 1% auto 0 auto;
-    justify-content: center;
-    background-color: burlywood;
-}
-
-.article-link {
+.user-name-date {
     position: relative;
-    width: calc(100% / 12 * 12);
-    background-color: rgb(132, 2, 2);
+    margin-left: 1.5%;
+    margin-top: 0.5%;
+    background-color: chocolate;
 }
-.article-link p {
-    font-size: 22px;
-    margin: 4% 0 0 15%;
-}
-.article-link a {
-    font-size: 20px;
-    margin: 4% 0 0 1%;
-}
-
-
-.bottom-search-box {
+.name {
     position: relative;
-    width: calc(100% / 12 * 12);
-    background-color: rgb(58, 165, 42);
-}
-.bottom-search-box input {
-    width: calc(100%/ 12 * 4);
-    height: 9vh;
-    margin: 20% 0 10% 30%;
-    padding-left: 2%;
-    font-size: 20px;
-}
-.bottom-search-box button {
-    margin: 20% 0 10% 0;
-    padding: 0 1.5% 0 1.5%;
-    height: 9.4vh;
-}
-
-
-
-.footer-section {
-    position: relative;
-    width: calc(100% / 12 * 12);
-    background-color: rgb(234, 35, 151);
-}
-
-label {
-    font-size: 30px;
+    font-size: 1.5ex;
     font-weight: bold;
 }
-
-.pages {
+.date {
     position: relative;
-    width: calc(100% / 12 * 2);
-    margin: 5%;
-    background-color: coral;
-}
-.pages p {
-    font-size: 25px;
-    margin-top: 10%;
+    font-size: 1ex;
 }
 
-.latest-article {
-    width: calc(100%/ 12 * 4);
-    margin: 5%;
-    background-color: coral;
+/*-------------ARTICLE IMAGE AND CONTEXT---------------*/
+.article-image img {
+    position: relative;
+    display: block;
+    width: calc(100% / 12 * 8);
+    height: 60vh;
+    margin: 3% auto 0 auto;
 }
 
-.socmed {
-    width: calc(100%/ 12 * 2);
-    margin: 5%;
-    background-color: coral;
+.article-text .text {
+    position: relative;
+    justify-content: center;
+    margin-top: 3%;
+    background-color: darkgreen;
+}
+
+
+/*---------------ARTICLE LINK------------------*/
+.article-link {
+    position: relative;
+    width: calc(100% / 12 * 10);
+    margin: 5% 0 0 5%;
+    background-color: rgb(203, 71, 71);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
 }

@@ -216,8 +216,42 @@
 
 /* map */
 .map iframe {
-    width: calc(100%/12*12);
+    width: calc(100%/12*11.9);
     height: 80vh;
 }
 
+/* FAQ */
+
+.btn-accordion {
+    position: relative;
+    width: calc(90%/12*12);
+    background-color: #eee;
+    margin-left: 4rem;
+    text-align: left;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    font-size: 1.3em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.active, .btn-accordion:hover {
+    background-color: #ccc;
+}
+
+i {
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.panel p{
+    width: calc(90%/12*12);
+    margin-left: 4rem;
+    text-align: justify;
+    font-size: 1em;
+    overflow: hidden;
+}
 

@@ -222,36 +222,86 @@
 
 /* FAQ */
 
-.btn-accordion {
-    position: relative;
+.acc-container {
     width: calc(90%/12*12);
-    background-color: #eee;
     margin-left: 4rem;
-    text-align: left;
+    border-bottom: 1px solid #000000;
+    background-color: #F5F5F5;
+}
+
+.acc-container:last-child {
     border: none;
-    outline: none;
-    padding: 2rem;
-    font-size: 1.3em;
-    transition: 0.5s;
+}
+
+.acc-title {
+    position: relative;
+    margin: 0;
+    color: #222222;
     cursor: pointer;
+    padding: 1.5rem; 
 }
 
-.active, .btn-accordion:hover {
-    background-color: #ccc;
+.acc-title i{
+    margin-right: 1rem;
 }
 
-i {
+.acc-title:after {
     position: absolute;
-    margin-left: -3rem;
-    margin-top: 2rem;
-    cursor: pointer;
+    content: "\221F";
+    top: 30%;
+    right: 30px;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    float: right;
+    font-size: 20px;
+    color: #000000;
+    transition: transform 0.2s ease-in;
 }
 
-.panel p{
-    width: calc(90%/12*12);
-    margin-left: 4rem;
-    text-align: justify;
-    font-size: 1em;
+.active, .acc-title:hover {
+    background-color: #ccc;
+    transition: 0.5s;
+}
+
+.active::after {
+    content: "\221F";
+    transform: rotate(135deg);
+    transform-origin: center;
+}
+
+.acc-content {
+    padding: 0 1rem;
+    max-height: 0;
     overflow: hidden;
+    -webkit-transition: max-height 0.4s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
+    font-size: 1.5em;
+    line-height: 1.7;
+}
+
+/* search css */
+.bottom-search-box {
+    position: relative;
+    width: calc(100%/12*12);
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-search-box input {
+    padding-left: 2%;
+    font-size: 1em;
+    width: 40%;
+    height: 9vh;
+}
+
+.button {
+    margin-left: -0.5%;
+    font-size: 20px;
+    width: 15%;
+    height: 9.5vh;
+    background-color: darkgrey;
+    cursor: pointer;
 }
 

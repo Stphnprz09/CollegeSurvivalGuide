@@ -100,12 +100,13 @@
     background-color: rgb(52, 189, 230);
 }
 
-.article-heading {
+.article-section p {
     position: relative;
     width: calc(100%/ 12 * 5);
     font-size: 3ex;
     background-color: chartreuse;
 }
+
 
 /*------------SOCMED NAVIGATION-------------*/
 .socmed-nav{
@@ -215,13 +216,135 @@
 }
 
 
+/*-------------BOTTOM SEARCH SECTION------------*/
+.bottom-search-container {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    box-sizing: border-box;
+    padding-top: 20%;
+    background-color: rgb(4, 38, 124);
+}
+input {
+    position: relative;
+    width: calc(100% / 12 * 3.5);
+    box-sizing: border-box;
+    margin-left: 30%;
+    padding: 1.5%;
+    font-size: 1.5ex;
+}
+button {
+    width: calc(100%/ 12 * 0.8);
+}
 
 
 
+/*-------------------FOOTER---------------------*/
+footer {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    box-sizing: border-box;
+    padding-top: 10%;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(207, 232, 118);
+}
 
+.footer-container {
+    position: relative;
+    width: calc(100% / 12 * 9.6);
+    box-sizing: border-box;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(252, 139, 11);
+}
+
+.pages {
+    position: relative;
+    display: grid;
+    width: calc(100/ 12 * 12);
+    margin-right: 25%;
+    box-sizing: border-box;
+    background-color: rgb(247, 93, 229);
+}
+.title-page {
+    position: relative;
+    font-size: 2.5ex;
+}
+.pages a {
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 2ex;
+    margin-top: 15%;
+    color: black;
+}
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.latest-article {
+    position: relative;
+    width: calc(100/ 12 * 12);
+    margin-right: 23.5%;
+    box-sizing: border-box;
+    background-color: rgb(247, 93, 229);
+}
+.title-latest-article {
+    position: relative;
+    font-size: 2.5ex;
+}
+
+.social-media {
+    position: relative;
+    width: calc(100/ 12 * 12);
+    box-sizing: border-box;
+    background-color: rgb(247, 93, 229);
+}
+.title-social-media {
+    position: relative;
+    font-size: 2.5ex;
+}
+.social-media a {
+    position: relative;
+    text-decoration: none;
+    font-size: 2ex;
+    margin-top: 15%;
+    color: black;
+}
+
+
+/*------------------COPYRIGHT-----------------*/
+.copy-container {
+    width: calc(100%/ 12 * 11);
+    margin-left: 4%;
+    background-color: chartreuse;
+    border-top: solid 2px grey;
+
+}
+.copyright-text {
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+/*---------------MEDIA QUERIES--------------*/
 @media only screen and (max-width: 767px) {
     body {
         font-size: 10px;
+    }
+
+    .left {
+        position: relative;
+        width: calc(100% / 12 * 12);
+        box-sizing: border-box;
+    }
+    
+    .right {
+        position: relative;
+        width: calc(100% / 12 * 12);
+        box-sizing: border-box;
+        margin-left: 0%;
     }
 }
 

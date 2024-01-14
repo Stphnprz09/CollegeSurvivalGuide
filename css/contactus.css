@@ -11,89 +11,10 @@
     height: 100vh;
 }
 
-.navbar {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    border-bottom: solid;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.nav-list ul li a:hover {
-    text-decoration: underline;
-}
-
-/* logo selector */
-.logo img {
-    width: 100%;
-    cursor: pointer;
-}
-
-
-/* search-box selector */
-.search-box {
-    position: relative;
-    margin-left: 1.5rem;
-}
-
-.search-box i {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
-.search-box input {
-    padding: 10px 30px;
-    border-radius: 50px;
-}
-
-/* navigation list selector */
-
-.nav-list ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 1.5rem;
-}
-
-
-/* log and sign in selector */
-
-.log-sign-in {
-    margin-left: 2rem;
-}
-
-.log-sign-in ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.log-sign-in .login a {
-    border: solid;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
-.log-sign-in .signin a {
-    color: #FFFFFF;
-    background-color: #000000;
-    border: solid;
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-
 /* body */
 
 .img-bg {
-    position: relative;
+    /* position: relative; */
     width: calc(100%/12*12);
     min-height: 72.4%;
     background-image: url(../Images/aboutus-bg.png);

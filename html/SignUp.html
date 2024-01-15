@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="sign.css">
+    <title>Create an Account</title>
+ </head>
+<body>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <button class="google-btn">Sign up with Google</button>
+        <form>
+            <p>Name</p>
+            <input type="text" placeholder="What should we call you?">
+            <p>Email</p>
+            <input type="email" placeholder="you@domain.com">
+            <div>
+                <p>Password</p>
+                <input type="password" id="password" placeholder="••••••••">
+                <span id="togglePassword">&#128065;</span>
+            </div>
+            <p class="note">Must be at least 8 characters</p>
+            <button type="button" class="create-btn">Create account</button>
+        </form>
+        <p class="login-text">Already have an account? <button class="login-btn">Log in</button></p>
+    </div>
+
+    <script>
+        const passwordInput = document.getElementById('password');
+        const togglePassword = document.getElementById('togglePassword');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+        });
+    </script>
+</body>
+
+</html>

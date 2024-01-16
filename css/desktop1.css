@@ -8,7 +8,6 @@
     width: calc(100% / 12 * 12);
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background-color: yellow;
 }
 
 .row {
@@ -18,57 +17,6 @@
 }
 
 
-/*------------HEADER SECTION----------------*/
-.header-section {
-    position: relative;
-    width: calc(100%/12 *12);
-    background-color: rgb(111, 111, 101);
-}
-
-.logo {
-    position: relative;
-    width: calc(100%/12 * 1);
-    height: 10vh;
-    margin: 0.5%;
-    background-color: rgba(203, 0, 0, 0.8);
-    text-align: center;
-}
-
-.search-box {
-    position: relative;
-    width: calc(100%/12 * 2);
-    height: 10vh;
-    margin: 0.5% 0.5% 0.5% 0;
-    background-color: rgba(203, 0, 0, 0.8);
-    text-align: center;
-}
-
-.nav-list {
-    position: relative;
-    width: calc(100%/12 * 6.5);
-    height: 10vh;
-    margin: 0.5% 0.5% 0.5% 0;
-    background-color: rgba(203, 0, 0, 0.8);
-    text-align: center;
-}
-
-.log-sign-in {
-    position: relative;
-    width: calc(100%/12 * 1.5);
-    height: 10vh;
-    margin: 0.5% 0.5% 0.5% 0;
-    background-color: rgba(203, 0, 0, 0.8);
-    text-align: center;
-}
-
-.menu-icon {
-    position: relative;
-    width: calc(100%/12 * 0.5);
-    height: 10vh;
-    margin: 0.5% 0.5% 0.5% 0;
-    background-color: rgba(203, 0, 0, 0.8);
-    text-align: center;
-}
 
 
 /*---------------IMAGE SECTION------------------*/
@@ -88,7 +36,6 @@
     width: calc(100% / 12 * 12);
     box-sizing: border-box;
     padding: 5% 10% 0 10%;
-    background-color: rgb(118, 150, 232);
 }
 
 .title-heading {
@@ -96,20 +43,17 @@
     text-align: center;
     font-size: 3.5ex;
     font-weight: bold;
-    background-color: aqua;
 }
 .heading-text {
     position: relative;
     text-align: center;
     font-size: 2ex;
     padding-top: 5%;
-    background-color: rgb(41, 83, 83);
 }
 
 .search-bar {
     position: relative;
     margin-top: 5%;
-    background-color: burlywood;
 }
 .search-bar i {
     position: absolute;
@@ -132,8 +76,7 @@
     position: relative;
     width: calc(100%/ 12 * 12);
     box-sizing: border-box;
-    padding: 10% 10% 0 10%;
-    background-color: rgb(0, 249, 100);
+    padding: 10%;
 }
 
 
@@ -142,9 +85,8 @@
     position: relative;
     width: calc(100%/ 12 * 3.1);
     box-sizing: border-box;
-    border: 1px solid #ececec;
+    border: 2px solid #ececec;
     margin-left: 5%;
-    background-color: rgb(255, 0, 221);
 }
 .tab-img img {
     position: relative;
@@ -174,7 +116,8 @@
 }
 .tab-text i {
     position: relative;
-    font-size: 1.5ex;
+    font-size: 1.4ex;
+    left: 2%;
 }
 
 .tab-text span {
@@ -186,25 +129,14 @@
 
 
 
-
 /*-------------------FOOTER---------------------*/
 footer {
     position: relative;
     width: calc(100% / 12 * 12);
     box-sizing: border-box;
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: 'Inter', sans-serif;
-    background-color: rgb(207, 232, 118);
-}
-
-.footer-section {
-    position: relative;
-    width: calc(100% / 12 * 9.6);
-    box-sizing: border-box;
-    margin-left: 10%;
-    margin-bottom: 3%;
-    font-family: 'Inter', sans-serif;
-    background-color: rgb(252, 139, 11);
+    background-color: #AAD1E5;
 }
 
 .section {
@@ -212,32 +144,32 @@ footer {
     width: calc(100%/ 12 * 3);
     box-sizing: border-box;
     margin-left: 6.2%;
-    background-color: rgb(88, 17, 79);
 }
 .section-label {
     position: relative;
     font-size: 2.8ex;
 }
 
-/*---------------------PAGE------------------*/
+
+/*---------------------PAGE--------------------*/
 .pages-link a {
     position: relative;
     display: grid;
     text-decoration: none;
     width: calc(100/ 12 * 12);
     box-sizing: border-box;
-    margin-top: 10%;
-    font-size: 2.3ex;
+    margin-top: 5%;
+    font-size: 2ex;
     color: black;
-    background-color: rgb(197, 65, 100);
 }
 /*----HOVER EFFECT ON TEXT----*/
 .pages-link a:hover {
     position: relative;
     font-weight: bold;
-    color: aquamarine;
+    color: white;
     transition: 0.3s;
 }
+
 
 /*-----------------SOCIAL MEDIA------------------*/
 .socmed-icons {
@@ -265,6 +197,15 @@ footer {
     color: white;
     transition: 0.5s;
 }
+/*---------POLICY & TERMS AND CONDITION--------*/
+.policy-terms a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.5ex;
+    margin-top: 10%;
+    left: 7%;
+    color: black;
+}
 
 
 
@@ -272,7 +213,7 @@ footer {
 .copy-container {
     width: calc(100%/ 12 * 11);
     margin-left: 4%;
-    background-color: chartreuse;
+    margin-top: 5%;
     border-top: solid 2px grey;
 
 }
@@ -288,11 +229,21 @@ footer {
     body {
         font-size: 10px;
     }
+
+    .search-bar i {
+        bottom: 40%;
+        font-size: 1.5ex;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         font-size: 14px;
+    }
+
+    .search-bar i {
+        bottom: 35%;
+        font-size: 1.5ex;
     }
 }
 

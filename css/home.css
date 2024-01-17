@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&display=swap');
 
 * {
     margin: 0;
@@ -43,6 +44,7 @@ main {
     /* background-color: aqua; */
     padding-top: 2rem;
     margin-left: 7.5rem;
+    margin-top: 5rem;
     width: 80%;
 }
 
@@ -96,7 +98,7 @@ main {
 }
 
 /* section 3 */
-.section-3, .section-4 {
+.section-3, .section-4{
     width: 90%;
     margin-left: 4.5rem;
     display: flex;
@@ -143,6 +145,10 @@ main {
 }
 
 /* section 4 */
+.section-4 {
+    margin-bottom: 15%;
+}
+
 .left-right-container-sec4 {
     position: relative;
     display: grid;
@@ -155,4 +161,79 @@ main {
     width: 90%;
     height: 60vh;
     margin: 3rem 0 0 2rem;
+}
+
+/* section 5 */
+.section-5 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.section-5 img {
+    width: calc(100%/12*12);
+}
+
+.imgSlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1rem 1px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 4ex;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #f0f0f0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* section  6 */
+.section-6 {
+    width: 90%;
+    margin: 10rem 0 10rem 4rem;
+}
+
+.section-6 h2 {
+    font-size: 8ex;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-family: 'Big Shoulders Display', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px; 
 }

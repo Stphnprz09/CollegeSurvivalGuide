@@ -49,7 +49,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a:hover {
+nav a:hover {
     background: #f0f0f0;
     transition: .5s;
 }

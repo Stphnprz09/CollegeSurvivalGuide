@@ -418,31 +418,6 @@ background-color: rgb(163, 163, 163);
     object-position: center;
 }
 
-
-/*--ARTICLE TEXT-------------------------------*/
-.article-text {
-    font-size: 22px;
-}
-
-
-/*--ARTICLE LINK-------------------------------*/
-.article-link {
-    display: flex;
-    margin-top: 5%;
-    margin-left: 5%;
-}
-
-.article-link p {
-    font-size: 20px;
-}
-
-.article-link a {
-    margin-left: 3%;
-    font-size: 20px;
-}
-
-
-
 /*--BOTTOM SEARCH BOX--------------------------*/
 .bottom-search-box {
     position: relative;

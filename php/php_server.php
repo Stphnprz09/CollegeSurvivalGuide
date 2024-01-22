@@ -12,4 +12,4 @@ if ($con->connection_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-echo "Connection success";
+// echo "Connection success";

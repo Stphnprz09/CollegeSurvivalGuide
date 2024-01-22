@@ -16,7 +16,7 @@
 header {
     width: 100%;
     min-height: 73%;
-    background: url(/Images/image1.png) center/cover;
+    background: url(../Images/image1.png) center/cover;
     display: flex;
     justify-content: center;
     align-items: center;

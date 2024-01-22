@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/signup.css">
+    <title>Create an Account</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=AtrIWyi-bglnjFLRaZNpMbILYfmqWsnnYnMlF3DcFUwfnyZaBKaEV4pOo3sD5kDzProJUFDaphuUPzOX9tKYzpXN6vTNH1V7AWlNmn8lIYhXb8B7ICPKK9i-C_V6afKrLwETpmTC0NweGT0aWWmBhfG16LKlXfEe_q5D1R4yAUPeLsODpkuJaS-C-bRRwyAuzWpqosc-SR-d6kj31fQJ65OG41A_ywNq3QwqAfAVlK5JPEYiBrFPH3287-C2eq5XcS3or5XZzftGmWHka5_dQVk7felxCT_3yGPKckXwkaxhzXEoSHZun_SaeusH40sO9aNl0AWb_xx3u2-OXw-PZ4SDgojrtaayClly3KuopOhXBqYfDKh8ZLDX-YLUUAXAcz5kBzbcMfXDNmsA6dpQLT9vI_0PR0j7t9AZ1gR4EaVFBJ-8s5YpxsCWv9WO4akSH_me7rz4IVzZ5qSUDx1roJ2BP-9AFKWTQGZ-eZyiuijT0NaAAF3Mzxx5ZzFKlRsg" charset="UTF-8"></script></head>
+<body>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <button class="google-btn">Sign up with Google</button>
+        <form>
+            <p>Name</p>
+            <input type="text" placeholder="What should we call you?">
+            <p>Email</p>
+            <input type="email" placeholder="you@domain.com">
+            <div>
+			<div class="password">
+			 <div class="pass">
+                <div class="label">
+            <label>Password</label>
+        </div>
+        <div class="Pass1">
+            
+            <button type="button" id="btnToggle" class="hide">
+            <i id="togglePassword" class="fa-regular fa-eye-slash"></i>
+            </button>
+    </div>
+    <div class="Pass2">
+            <p>Hide</p>
+        </div>
+        </div>
+              
+                <input type="password" id="password" placeholder="••••••••">
+            </div>
+            <p class="note">Must be at least 8 characters</p>
+			 </div>
+            <button type="button" class="create-btn">Create account</button>
+		<div class="last">
+             <div class="account"> 
+        <p <p>Already have an account? </p>
+        </div>  
+        <div class="login">
+            <p>Log in</p>
+        </div>
+        </div>
+
+    </form>
+
+    <script>
+        const passwordInput = document.getElementById('password');
+        const togglePassword = document.getElementById('togglePassword');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+        });
+    </script>
+</body>
+
+</html>

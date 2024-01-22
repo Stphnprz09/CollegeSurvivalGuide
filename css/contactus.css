@@ -202,12 +202,16 @@
 
 /* search css */
 .bottom-search-box {
-    position: relative;
+    width: calc(100%/12*11);
+    padding: 3rem;
+    margin-left: 3.5rem;
+    /* position: relative;
     width: calc(100%/12*12);
     top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10rem; */
 }
 
 .bottom-search-box input {

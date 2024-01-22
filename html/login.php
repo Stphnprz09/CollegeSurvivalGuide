@@ -29,7 +29,7 @@
 
                 <div class="input-group">
                     <label>Email</label>
-                    <input type="email" name="txtUserName" class="form-control" placeholder="example@gmail.com" required>
+                    <input type="text" name="txtUserName" class="form-control" placeholder="example@gmail.com" required>
 
                 </div>
                 <div class="input-group">
@@ -47,7 +47,7 @@
                             <p>Hide</p>
                         </div>
                     </div>
-                    <input type="password" id="password" name="txtPassword" class="form-control" placeholder="••••••••" required>
+                    <input type="password" id="password" name="txtPassword" class="form-control" placeholder="••••••••">
                 </div>
                 <button class="btn" type="submit">Log in</button>
                 <div class="below">

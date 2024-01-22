@@ -12,12 +12,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($email !== null || $password !== null) {
         if ($result->num_rows == 1) {
-            // $_SESSION['login_success'] = true;
+
             header("Location: ../html/home.html");
             exit();
         } else {
-            echo "<script>alert('Incorrect Credentials')</script>";
-            session_abort();
+            $error[] = 'incorrent email or password';
+
+            session_reset();
         }
     }
 }

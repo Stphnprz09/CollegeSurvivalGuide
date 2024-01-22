@@ -35,6 +35,7 @@ padding: 0;
 			text-align: center;
 			font-family: 'Inter', sans-serif;
         }
+	
 
         .google-btn {
             background-color: #E3E3E3 #F9F9F9;
@@ -52,7 +53,41 @@ padding: 0;
 			font-family: 'Inter', sans-serif;
 			font-weight: bold;
         }
-		
+.button-container{
+    display: flex;
+    align-items: center;
+}
+.or p{
+    color:#667185;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+.or p::before{
+    content:"";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background:#000;
+    position: absolute;
+    right:0;
+    top:50%;
+    opacity: 0.10;
+
+}
+.or p::after{
+    content:"";
+    display: block;
+    width: 170px;
+    height: 2px;
+    background:#000;
+    position: absolute;
+    left:0;
+    top:50%;
+    opacity: 0.10;
+
+}
 		.password{
 			position: relative;
 			margin-bottom: 1.25rem;
@@ -98,38 +133,66 @@ padding: 0;
     border: none;
     margin-top: 0px;
     margin-bottom: 40px;
-	font-family: 'Inter', sans-serif;
-			
+	}
+.button:hover {
+cursor: pointer;
+background-color:#754a29; ;
+
         }
 	.last{
     display: flex;
 }
 	.account p{
-    margin-left: 160px;
+    margin-left: 12%;
+	margin-top: -1%;
     color:black;
-
+	position: absolute;
+	
 }
 	.login p{
-    margin-right: 60px;
+ 
     color:#ff0000;
-    font-weight:600;
+	font-weight: bold;
+	  margin-left: 5px;
+	
 	}
+	.login p:hover {
+    cursor: pointer;
+    color:#754a29; 
+    }
 	.hide{
     border: none;
-
 }
 	.hide:hover{
     cursor: pointer;
     text-decoration: underline;
-}
 
+        }
   .container form input{
     border: none;
     border-bottom: 1px solid lightgrey;
   }
-  /*.container form button, .container form .login-text{
-    poosition: relative;
+  /*.container form button, .container form .login-text .account-text .create-btn{
+    position: relative;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+	
   }*/
+  @media only screen and (max-width: 767px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		font-size: 14px;
+	}
+}

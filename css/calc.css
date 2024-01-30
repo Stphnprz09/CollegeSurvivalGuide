@@ -17,7 +17,7 @@
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    background-image:url('../Images/desktop1.png');
+    background-image:url('../Images/calcu-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+
+/*-------------------FOOTER---------------------*/
+footer {
+    position: relative;
+    width: calc(100% / 12 * 12);
+    box-sizing: border-box;
+    padding-top: 5%;
+    font-family: 'Inter', sans-serif;
+    background-color: #AAD1E5;
+}
+
+.section {
+    position: relative;
+    width: calc(100%/ 12 * 3);
+    box-sizing: border-box;
+    margin-left: 6.2%;
+}
+
+.section-label {
+    position: relative;
+    font-size: 2.8ex;
+}
+
+
+/*---------------------PAGE--------------------*/
+.pages-link a {
+    position: relative;
+    display: grid;
+    text-decoration: none;
+    width: calc(100/ 12 * 12);
+    box-sizing: border-box;
+    margin-top: 5%;
+    font-size: 2ex;
+    color: black;
+}
+
+/*----HOVER EFFECT ON TEXT----*/
+.pages-link a:hover {
+    position: relative;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+
+/*-----------------SOCIAL MEDIA------------------*/
+.socmed-icons {
+    position: relative;
+    display: flex;
+}
+
+.socmed-icons a {
+    position: relative;
+    text-decoration: none;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 50%;
+}
+
+.socmed-icons i {
+    position: relative;
+    font-size: 3ex;
+    color: black;
+}
+
+/*----HOVER EFFECT ICONS----*/
+.socmed-icons a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socmed-icons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+
+/*---------POLICY & TERMS AND CONDITION--------*/
+.policy-terms a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 1.5ex;
+    margin-top: 10%;
+    left: 7%;
+    color: black;
+}
+
+
+
+/*------------------COPYRIGHT-----------------*/
+.copy-container {
+    width: calc(100%/ 12 * 11);
+    margin-left: 4%;
+    margin-top: 5%;
+    border-top: solid 2px grey;
+
+}
+
+.copyright-text {
+    text-align: center;
+    margin-top: 5%;
+}

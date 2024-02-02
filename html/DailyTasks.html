@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Planner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      background-image: url('todo.jpg');
+    }
+
+    #app {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .list-container {
+      background-color: #aad1e5;
+      border-radius: 8px;
+      padding: 10px;
+      width: 30%;
+      box-sizing: border-box;
+    }
+	
+	h1 {
+	color: #00B6BC;
+    font-size: 30px;
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+	margin-top: 30px;
+	}
+
+    h2 {
+      color: #fff;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #bdd2dd;
+      margin-bottom: 8px;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    li.done {
+      background-color: #fff;
+      color: #555;
+      text-decoration: line-through;
+    }
+	.copy-container {
+    width: calc(100%/ 12 * 11);
+    margin-left: 4%;
+    margin-top: 38%;
+    border-top: solid 2px grey;
+
+}
+.copyright-text {
+    text-align: center;
+    margin-top: 5%;
+}
+  </style>
+</head>
+<body>
+<h1> DAILY TASKS </h1>
+  <div id="app">
+    <div class="list-container" id="todo-list">
+      <h2>To Do</h2>
+      <ul id="todo">
+        <!-- To-Do items go here -->
+      </ul>
+    </div>
+    <div class="list-container" id="doing-list">
+      <h2>Doing</h2>
+      <ul id="doing">
+        <!-- Doing items go here -->
+      </ul>
+    </div>
+    <div class="list-container" id="done-list">
+      <h2>Done</h2>
+      <ul id="done">
+        <!-- Done items go here -->
+		 </div>
+		  </div>
+		<div class="copy-container">
+            <div class="copyright-text">Copyright &copy; Team Awa BSIT S.Y. 2023-2024</div>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get references to the lists
+      const todoList = document.getElementById('todo');
+      const doingList = document.getElementById('doing');
+      const doneList = document.getElementById('done');
+
+      // Function to move an item from one list to another
+      function moveItem(item, fromList, toList) {
+        fromList.removeChild(item);
+        toList.appendChild(item);
+      }
+
+      // Function to handle item click and move between lists
+      function handleItemClick(event) {
+        const listItem = event.target;
+        const parentList = listItem.parentElement;
+
+        if (parentList === todoList) {
+          listItem.classList.remove('done');
+          moveItem(listItem, todoList, doingList);
+        } else if (parentList === doingList) {
+          listItem.classList.remove('done');
+          moveItem(listItem, doingList, doneList);
+        } else if (parentList === doneList) {
+          listItem.classList.add('done');
+        }
+      }
+
+      // Add event listener to all lists
+      todoList.addEventListener('click', handleItemClick);
+      doingList.addEventListener('click', handleItemClick);
+      doneList.addEventListener('click', handleItemClick);
+
+      // Function to add a new item to the To Do list
+      function addItem(list) {
+        const newItemText = prompt(`Enter a new task for ${list}:`);
+        if (newItemText) {
+          const newItem = document.createElement('li');
+          newItem.textContent = newItemText;
+          if (list === 'To Do') {
+            todoList.appendChild(newItem);
+          } else if (list === 'Doing') {
+            doingList.appendChild(newItem);
+          } else if (list === 'Done') {
+            newItem.classList.add('done');
+            doneList.appendChild(newItem);
+          }
+        }
+      }
+
+      // Add event listener for adding a new item to each list
+      document.getElementById('todo-list').addEventListener('click', () => addItem('To Do'));
+      document.getElementById('doing-list').addEventListener('click', () => addItem('Doing'));
+      document.getElementById('done-list').addEventListener('click', () => addItem('Done'));
+    });
+	
+  </script>
+</body>
+</html>

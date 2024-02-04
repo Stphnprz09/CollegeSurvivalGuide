@@ -19,9 +19,7 @@ body {
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-    background-image: url('../Images/calcu-img.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(#AAD1E5, #e1f2fb);
 }
 
 .calculator-grid>button {
@@ -29,7 +27,7 @@ body {
     font-size: 2rem;
     border: 1px solid rgb(17, 14, 14);
 
-    background-color: rgb(148, 133, 133);
+    background-color: #02abff;
 }
 
 .calculator-grid>button:hover {

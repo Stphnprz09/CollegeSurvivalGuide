@@ -201,3 +201,64 @@ main {
     font-size: 1rem;
     text-align: left;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 870px) and (max-width: 1000px) {
+    header {
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    nav {
+        width: 68%;
+    }
+
+    .logo-container h3 {
+        padding: 1rem 0;
+        font-size: 0.8rem;
+    }
+
+    nav li {
+        width: 10%;
+        font-size: 0.8rem;
+        padding: 2rem 2rem;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 893px) {
+    * {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    span {
+        display: block;
+        margin-left: auto;
+        margin-right: 2rem;
+        padding-top: 1.5rem;
+        cursor: pointer;
+    }
+
+    span i {
+        font-size: 2rem;
+    }
+
+    .logo-container h3 {
+        font-size: 1rem;
+    }
+
+    .tools-container{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5%;
+        margin-bottom: 10rem;
+    }
+}

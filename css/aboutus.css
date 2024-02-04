@@ -52,7 +52,11 @@ nav li {
     padding: 2.2rem 1rem;
     list-style-type: none;
     text-align: center;
+    /* border: solid; */
+}
 
+nav li:first-child{
+    margin-left: 4rem;
 }
 
 nav a:hover {
@@ -74,7 +78,7 @@ nav a {
     font-family: 'Inter', sans-serif;
 }
 
-span {
+span.modal {
     display: none;
 }
 
@@ -122,33 +126,230 @@ main {
 .bg-main {
     width: 100%;
     height: 70vh;
-    background-image: url('../Images/image1.png');
+    background-image: url('../Images/1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.bg-main h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #FFFFFF;
-    line-height: 96px;
-    font-size: 3.5rem;
-    letter-spacing: 0.5rem;
 }
 
 /* text-1 css */
 .text-1 {
     width: 80%;
     text-align: center;
-    padding: 5rem 0;
+    padding: 5rem 0 10rem 0;
     word-spacing: 0.5rem;
 }
 
 .text-1 h1 {
     margin-bottom: 1rem;
     font-size: 2rem;
+}
+
+/* content 1 and 2 */
+.content-1,
+.content-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: 5rem 0;
+}
+
+.content-img1 img,
+.content-2 img{
+    width: 100%;
+    height: auto;
+}
+
+.content-text1{
+    margin-left: 2rem;
+}
+
+.content-text2 {
+    margin-right: 2rem;
+}
+
+.content-text1,
+.content-text2{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   line-height: 40px;
+
+}
+
+/* content 3 */
+.content-3{
+    width: 90%;
+    height: auto;
+    margin: 5rem 0;
+}
+
+.content-text3 h1 {
+    text-align: center;
+}
+
+.group-content3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5%;
+    margin-top: 5rem;
+}
+
+.circle1 img, .circle2 img, .circle3 img{
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 1rem;
+}
+
+.circle1 p, .circle2 p, .circle3 p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* content 4 */
+.content-4 {
+    width: 90%;
+    margin: 5rem 0;
+}
+
+.content-text4 {
+    text-align: center;
+}
+
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2%;
+    margin-top: 8rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 20.08px;
+    padding-bottom: 1rem;
+}
+
+.card img{
+    width: 100%;
+    height: 30vh;
+
+}
+
+.card h2{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.card a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    background-color: #D9D9D9;
+    border-radius: 20.08px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+/* for navigation */
+@media only screen and (min-width: 870px) and (max-width: 1000px) {
+    header {
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    nav {
+        width: 68%;
+    }
+
+    .logo-container h3 {
+        padding: 1rem 0;
+        font-size: 0.8rem;
+    }
+
+    nav li {
+        width: 10%;
+        font-size: 0.8rem;
+        padding: 2rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 893px) {
+    * {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    span {
+        display: block;
+        margin-left: auto;
+        margin-right: 2rem;
+        padding-top: 1.5rem;
+        cursor: pointer;
+    }
+
+    span i {
+        font-size: 2rem;
+    }
+
+    .logo-container h3 {
+        font-size: 1rem;
+    }
+
+        .content-1,
+        .content-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+    
+        .content-img1 img,
+        .content-img2 img {
+            width: 100%;
+        }
+
+    .group-content3{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0;
+        margin-top: 5rem;
+    }
+
+        .card-group {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 0%;
+            margin-top: 8rem;
+            text-align: center;
+        }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #C4C4C4;
+        border-radius: 20.08px;
+        padding-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:851)  and (max-width: 1100px) {
+    .content-text1,.content-text2,.content-text3,.content-text4{
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
 }

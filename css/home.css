@@ -55,6 +55,10 @@ nav li {
     
 }
 
+nav li:first-child {
+    margin-left: 4rem;
+}
+
 nav a:hover {  
     border-bottom: 4px solid #000;
 }

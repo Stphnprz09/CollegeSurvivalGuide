@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: calc(100%/12 * 12);
+    min-height: 100vh;
+    background: linear-gradient(#AAD1E5, #e1f2fb);
+    color: white;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 4ex;
+    font-weight: 600;
+}
+
+.container button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%/12 * 1);
+    height: 15vh;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    color: white;
+    background-color: #02abff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container button i {
+    font-size: 5ex;
+}
+
+.container button p {
+    font-size: 2.1ex;
+    margin-top: 2%;
+}
+
+
+.input-box {
+    position: relative;
+    width: calc(100%/12 * 3);
+    max-width: calc(100%/12 * 3);
+    min-height: 25vh;
+    background: white;
+    color: #333;
+    padding: 1%;
+    margin-bottom: 2%;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img {
+    position: absolute;
+    bottom: 6%;
+    right: 4%;
+    cursor: pointer;
+}
+
+.note-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5%;
+}

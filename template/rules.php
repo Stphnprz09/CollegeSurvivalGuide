@@ -35,6 +35,7 @@ function userLogin($email, $password)
     }
 }
 
+// function for contact us
 function userContact($name, $email, $message)
 {
     global $conn;

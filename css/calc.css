@@ -27,7 +27,7 @@ body {
     font-size: 2rem;
     border: 1px solid rgb(17, 14, 14);
 
-    background-color: #02abff;
+    background-color: #A3D6EF;;
 }
 
 .calculator-grid>button:hover {
@@ -40,7 +40,7 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: #FFFFFF;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -56,6 +56,6 @@ body {
 }
 
 .output .current-operand {
-    color: white;
+    color: #000;
     font-size: 2.5rem;
 }

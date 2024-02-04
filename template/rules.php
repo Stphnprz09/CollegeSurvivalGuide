@@ -34,3 +34,17 @@ function userLogin($email, $password)
         }
     }
 }
+
+function userContact($name, $email, $message)
+{
+    global $conn;
+    $insertSql = $conn->prepare("INSERT into contact (name,email,message)VALUES (?,?,?)");
+    $insertSql->bind_param("sss", $name, $email, $message);
+
+    if ($insertSql->execute()) {
+        header('location: contactus.html');
+        exit();
+    } else {
+        echo $conn->error;
+    }
+}

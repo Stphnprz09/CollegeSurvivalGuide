@@ -1,0 +1,21 @@
+{
+    "name": "csguide/perez",
+    "description": "csguide",
+    "type": "library",
+    "require": {
+        "phpmailer/phpmailer": "6.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Csguide\\Perez\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stephen Perez",
+            "email": "perezstephenmathew360@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

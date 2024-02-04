@@ -1,147 +1,241 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    font-family: 'Inter', sans-serif;
+body {
     width: 100%;
-    height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
-/* body */
-
-.img-bg {
-    /* position: relative; */
-    width: calc(100%/12*12);
-    min-height: 72.4%;
-    background-image: url(../Images/aboutus-bg.png);
-    background-size: cover;
-    background-position: center;
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.text-1-heading, .text-2,.text-3 {
-    position: relative;
-    width: calc(100%/12*12);
-    margin: 5rem 0;
-    height: auto;
-    /* background-color: aqua; */
-}
-
-.text-1-heading > div, h2 , .text-2,.text-3{
+.logo-container {
     text-align: center;
+    margin: 0 5.5rem;
+}
+
+.logo-container img {
+    position: absolute;
+    left: 1.5%;
+    top: 2.5%;
+}
+
+.logo-container h3 {
+    padding: 2rem 0;
+    font-family: 'Cinzel', serif;
+}
+
+nav {
+    width: 70%;
+}
+
+nav ul,
+.logo-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+nav li {
+    padding: 2.2rem 1rem;
+    list-style-type: none;
+    text-align: center;
+
+}
+
+nav li:first-child {
+    margin-left: 4rem;
+}
+
+nav a:hover {
+    border-bottom: 4px solid #000;
+}
+
+nav li:nth-child(7) {
+    margin-right: 1rem;
+    width: 0;
+}
+
+nav li:last-child {
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+}
+
+span {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 3rem 5rem;
+    border-radius: 20px;
+}
+
+.modal-content li {
+    list-style-type: none;
     padding: 1rem 0;
 }
 
-.text-1-heading h2, .text-2 h2 , .text-3 h2{
-    font-size: 2.5em;
+.modal-content a {
+    text-decoration: none;
+    color: #000;
 }
 
-/* contact form */
-.contact-form {
-    position: relative;
-    width: calc(80%/12*12);
-    height: 85vh;
-    margin: 1rem 8.5rem;
+.modal-content a:hover {
+    color: blue;
+}
+
+/* MAIN CSS*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-main {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../Images/aboutus-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* text-1 css */
+.text-1,.text-2 {
+    width: 80%;
+    text-align: center;
+    padding: 5rem 0;
+    word-spacing: 0.5rem;
+}
+
+.text-1 h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* contact us css */
+.contact-us-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    box-shadow: 0px 0px 60px 30px #00000008;
+    width: 90%;
+    border: 1px solid #FFFFFF;
+}
+
+.contact-details{
+    width: 90%;
+    background-color: #0E0E0E;
+    color: #fff;
+    border: solid;
+    margin: 0.8rem ;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.float-text {
-    position: absolute;
-    background-color: #000000;
-    width: 40%;
-    height: 80vh;
-    margin: 1rem;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.text-info, .infos, .socmed-icons {
-    margin: 3rem 2rem;
-}
-
-.text-info h3,p, infos p{
-    padding-bottom: 0.5rem;
-}
-
-.socmed-icons {
-    margin-top: auto;
-}
-
-.float-text h3, .infos, .socmed-icons a i{
-    color: #FFFFFF;
-}
-
-.socmed-icons a i {
-    font-size: 1.5em;
-    margin-right: 0.5rem;
-}
-
-/* form */
-.input-form {
-    position: absolute;
-    width: 56%;
-    height: 71vh;
-    margin-left: 27rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    /* background-color: aqua; */
-}
-
-.info-input {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3rem 1rem;
-    gap: 25%;
-}
-
-.info-input input {
-    padding-right: 2.4rem;
-    border: none;
-    outline: none;
-    border-bottom: solid;
-}
-
-
-.message-form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 1rem;
-    margin-top: 6rem;
-}
-
-.message-form input {
-    border: none;
-    outline: none;
-    border-bottom: solid;
-}
-
-.submit-btn {
-    margin-top: 1rem;
-    text-align: right;
-}
-
-.submit-btn input {
     padding: 1rem 2rem;
-    background-color: #000000;
-    color: #FFFFFF;
-    cursor: pointer;
+}
+
+.title{
+    line-height: 30px;
+}
+
+.title p{
+    color: #C9C9C9;
+}
+
+.title, .infos {
+    margin-bottom: 8rem;
+}
+
+.infos p{
+   margin-bottom: 3rem;
+}
+
+.logos i {
+    padding-right: 2rem;
+}
+
+.contact-form {
+    width: 100%;
+    margin: 0.8rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact-form label,input{
+    margin: 2rem 0;
+}
+
+.contact-form input[type='text'],input[type='email']{
+    width: calc(300%/12*12);
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 0.5rem 0;
+}
+
+button{
+   padding: 1rem 2rem;
+   background-color: #000;
+   color: #FFFFFF; 
+   cursor: pointer;
 }
 
 /* map */
-.map iframe {
-    width: calc(100%/12*11.9);
+.map{
+    margin: 5rem 0 10rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.map-text {
+    margin-bottom: 5rem;
+}
+
+iframe{
+    width: 100%;
     height: 80vh;
 }
 
-/* FAQ */
+/* faq */
+.faq{
+    width: 100%;
+    margin: 5rem 0 10rem 0;
+}
+
+.text-3{
+    text-align: center;
+    margin-bottom: 5rem;
+}
 
 .acc-container {
     width: calc(90%/12*12);
@@ -159,10 +253,10 @@
     margin: 0;
     color: #222222;
     cursor: pointer;
-    padding: 1.5rem; 
+    padding: 1.5rem;
 }
 
-.acc-title i{
+.acc-title i {
     margin-right: 1rem;
 }
 
@@ -179,7 +273,8 @@
     transition: transform 0.2s ease-in;
 }
 
-.active, .acc-title:hover {
+.active,
+.acc-title:hover {
     background-color: #ccc;
     transition: 0.5s;
 }
@@ -196,33 +291,6 @@
     overflow: hidden;
     -webkit-transition: max-height 0.4s ease-in-out;
     transition: max-height 0.4s ease-in-out;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.7;
 }
-
-/* search css */
-.bottom-search-box {
-    position: relative;
-    width: calc(100%/12*12);
-    top: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bottom-search-box input {
-    padding-left: 2%;
-    font-size: 1em;
-    width: 40%;
-    height: 9vh;
-}
-
-.button {
-    margin-left: -0.5%;
-    font-size: 20px;
-    width: 15%;
-    height: 9.5vh;
-    background-color: darkgrey;
-    cursor: pointer;
-}
-

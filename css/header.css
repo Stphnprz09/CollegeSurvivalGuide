@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -8,17 +8,17 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
 }
 
 nav {
-   background-color: #FFFFFF;
+    background-color: #FFFFFF;
     height: 80px;
     width: 100%;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 label.logo {

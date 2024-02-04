@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    width: calc(100%/12 * 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-image: url('../Images/bglogin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+form {
+    position: relative;
+    width: calc(100%/12 * 4);
+    padding: 5% 2%;
+    height: 75vh;
+    border-radius: 20px;
+    background-color: white;
+}
+
+form input::placeholder {
+    color: rgba(188, 188, 188, 1);
+}
+
+form input,label {
+    margin-left: 4%;
+}
+
+form input {
+    position: relative;
+    width: calc(100%/12 * 10);
+    margin-top: 5%;
+    margin-bottom: 3%;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.8ex;
+    outline: none;
+}
+
+form labelfirst-child {
+    padding-top: 1rem;
+}
+
+
+.header {
+    position: relative;
+    font-size: 3ex;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+
+.inputs {
+    position: relative;
+    margin-top: 1%;
+}
+
+.inputs label {
+    font-weight: 500;
+}
+
+.create-btn {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 15%;
+    font-size: 2ex;
+    width: calc(100%/12 * 9);
+    padding: 3%;
+    background-color: darkgrey;
+    border-radius: 15px;
+    background-color: #844D26;
+    color: #FFFFFF;
+    border: none;
+}
+
+.login-link {
+    position: relative;
+    margin-top: 8%;
+    text-align: center;
+    color: #777;
+}
+
+.login-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.togglePassword {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    cursor: pointer;
+    color: #BCBCBC;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+}

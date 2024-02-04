@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     Stay tuned for a wealth of resources, tips, and inspiration to make your college experience unforgettable. 🌈 Let's conquer this academic adventure together! 🤝<br><br>
 
-    Best regards,
+    Best regards,<br>
     The CSGuide Team
     ";
 

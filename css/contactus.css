@@ -155,6 +155,7 @@ main {
 }
 
 .contact-details{
+    position: relative;
     width: 90%;
     background-color: #0E0E0E;
     color: #fff;
@@ -162,6 +163,20 @@ main {
     margin: 0.8rem ;
     border-radius: 5px;
     padding: 1rem 2rem;
+    overflow: hidden;
+}
+
+.elipse1{
+    position: absolute;
+    top:55%;
+    right: -9%;
+    rotate: 45deg;;
+}
+
+.elipse2{
+    position: absolute;
+    top: 50%;
+    right: 20%;
 }
 
 .title{

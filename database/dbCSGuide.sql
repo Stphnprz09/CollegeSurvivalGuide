@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 04, 2024 at 10:55 AM
+-- Generation Time: Feb 09, 2024 at 03:09 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -38,7 +38,7 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`name`, `email`, `message`) VALUES
-('Happy Enciso', 'encisohappy@gmail.com', 'This website is awesome');
+('Happy Enciso', 'encisohappy@gmail.com', 'testing');
 
 -- --------------------------------------------------------
 
@@ -47,12 +47,20 @@ INSERT INTO `contact` (`name`, `email`, `message`) VALUES
 --
 
 CREATE TABLE `schedule` (
-  `id` int(30) NOT NULL,
+  `id` int(11) DEFAULT 0,
   `title` text NOT NULL,
   `description` text NOT NULL,
   `start_datetime` datetime NOT NULL,
   `end_datetime` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `schedule`
+--
+
+INSERT INTO `schedule` (`id`, `title`, `description`, `start_datetime`, `end_datetime`) VALUES
+(0, 'web dev presentation', 'n/a', '2024-02-08 16:00:00', '2024-02-08 17:00:00'),
+(0, 'web dev presentation', 'wew', '2024-02-08 16:00:00', '2024-02-08 17:00:00');
 
 -- --------------------------------------------------------
 
@@ -71,8 +79,7 @@ CREATE TABLE `tblUser` (
 --
 
 INSERT INTO `tblUser` (`name`, `email`, `password`) VALUES
-('Stephen Perez', 'testing@gmail.com', '1234'),
-('user1', 'user@gmail.com', '1234');
+('Totoy Bibo', 'johnisaacrizon@totoybibo.com', '1111');
 
 --
 -- Indexes for dumped tables
